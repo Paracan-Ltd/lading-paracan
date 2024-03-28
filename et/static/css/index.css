@@ -238,8 +238,19 @@ main {
     background-color: #fff;
     border: 1px solid #fff;
     padding: 30px;
-    text-align: center;
     transition: 0.4s all ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.our-team-footer img {
+    object-fit: contain;
+    width: 500px;
+    border-radius: 50%;
 }
 
 .our-team-card:hover,

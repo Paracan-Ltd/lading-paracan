@@ -243,9 +243,24 @@ main {
     background-color: #fff;
     border: 1px solid #fff;
     padding: 30px;
+    transition: 0.4s all ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.our-team-footer img {
+    object-fit: contain;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.our-team-footer p {
     text-align: center;
     font-size: 15px;
-    transition: 0.4s all ease;
 }
 
 .our-team-card:hover,
