@@ -191,6 +191,91 @@ main {
     width: 100%;
 }
 
+.our-team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 12px;
+}
+
+#our-team .our-team-board,
+#our-team .our-team-managers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 92%;
+}
+
+.our-team-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.our-team-card {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+
+    border-radius: var(--primary-border-radius);
+    box-shadow: var(--primary-box-shadow);
+    transition: 0.4s all ease;
+    height: 250px;
+    width: 100%;
+
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.our-team-footer {
+    width: 92%;
+    border-radius: var(--primary-border-radius);
+    box-shadow: var(--primary-box-shadow);
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.4s all ease;
+}
+
+.our-team-card:hover,
+.our-team-footer:hover {
+    background-color: #5ec0c52f;
+    border: 1px solid #5ec0c52f;
+}
+
+.our-team-card-name {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.our-team-card-title {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.our-team-card-description {
+    font-size: 13px;
+    text-align: center;
+}
+
+.our-team-img img {
+    object-fit: contain;
+    width: 50px;
+    border-radius: 50%;
+}
+
 .our-vision,
 .our-operations {
     padding: 30px;
@@ -303,12 +388,13 @@ main {
     padding-top: 20px;
     width: 100%;
     position: relative;
-    
+
     margin-bottom: 20px;
 }
 
 .our-services::before,
-.vision-and-values::before {
+.vision-and-values::before,
+.our-team::before {
     content: "";
     position: absolute;
     top: 0;

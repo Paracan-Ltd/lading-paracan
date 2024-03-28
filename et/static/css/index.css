@@ -202,21 +202,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     width: 92%;
 }
 
-.our-team-header,
-.our-team-footer {
+.our-team-header {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .our-team-card {
-    padding: 50px;
+    padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -225,31 +224,50 @@ main {
     border-radius: var(--primary-border-radius);
     box-shadow: var(--primary-box-shadow);
     transition: 0.4s all ease;
-    height: 380px;
+    height: 400px;
     width: 450px;
 
     background-color: #fff;
     border: 1px solid #fff;
 }
 
-.our-team-card:hover {
+.our-team-footer {
+    width: 92%;
+    border-radius: var(--primary-border-radius);
+    box-shadow: var(--primary-box-shadow);
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 30px;
+    text-align: center;
+    transition: 0.4s all ease;
+}
+
+.our-team-card:hover,
+.our-team-footer:hover {
     background-color: #5ec0c52f;
     border: 1px solid #5ec0c52f;
 }
 
 .our-team-card-name {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .our-team-card-title {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .our-team-card-description {
     font-size: 16px;
     text-align: center;
+}
+
+.our-team-img img {
+    object-fit: contain;
+    width: 100px;
+    border-radius: 50%;
 }
 
 .our-vision,
